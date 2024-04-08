@@ -1,4 +1,4 @@
-# Azure Databricks - Route workers traffic through an NVA
+# Azure Databricks - Route workers traffic through NVA
 
 ## Overview
 
