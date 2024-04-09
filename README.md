@@ -8,7 +8,7 @@ Routing the traffic of Azure Databricks Service workers is possible, by configur
 
 ![img](images/architecture.png)
 
-In the previous example, the traffic of the workers is routed through *AzureFirewall*. This is useful for filtering traffic, inspections, etc.
+In the given example, the workers traffic is routed through *AzureFirewall*. This is useful for filtering traffic, inspections, etc.
 
 This configuration also addresses a limitation of Azure Databricks Service today: the fact that this service does not support [Services Endpoints](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-service-endpoints-overview).
 
@@ -42,7 +42,7 @@ To begin the Terraform deployment, following these steps:
 
 ## Check workers outbound Public IP
 
-* Open the Azure Databricks Service Workspace in the resource group `rg-databricks-se`
+* Open the Azure Databricks Service Workspace in the `rg-databricks-se` resource group 
 * Create a Compute cluster
 * Create a new notebook and run the following code:
 
@@ -56,7 +56,7 @@ print(public_ip)
 
 ![img](images/databricks.png)
 
-* Check that hte displayed IP is the public IP of the firewall:
+* Check if the displayed IP is the public IP of the firewall:
 
 ![img](images/azurefirewallpip.png)
 
